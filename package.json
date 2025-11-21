@@ -1,0 +1,37 @@
+{
+  "name": "fallbackdemo",
+  "version": "1.0.0",
+  "description": "Advanced demo project showing receive() and fallback() functions in Solidity",
+  "main": "cli.js",
+  "type": "module",
+  "scripts": {
+    "test": "forge test",
+    "test:gas": "forge test --gas-report",
+    "test:coverage": "forge coverage",
+    "compile": "forge compile",
+    "deploy": "forge script script/Deploy.s.sol:DeployFallbackDemo --rpc-url http://localhost:8545 --broadcast --verify -vvv",
+    "deploy:local": "forge script script/Deploy.s.sol:DeployFallbackDemo --rpc-url http://localhost:8545 --broadcast",
+    "anvil": "anvil",
+    "cli": "node cli.js",
+    "lint": "forge fmt",
+    "clean": "forge clean",
+    "size": "forge build --sizes"
+  },
+  "dependencies": {
+    "ethers": "^6.10.0",
+    "inquirer": "^8.2.6",
+    "chalk": "^5.3.0",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "solidity",
+    "foundry",
+    "ethereum",
+    "fallback",
+    "receive",
+    "smart-contracts"
+  ],
+  "author": "FallbackDemo Project",
+  "license": "MIT"
+}
